@@ -13,6 +13,9 @@ build/
 PlantVillage
 PlantDoc
 dataset
+ml-model/*.png
+ml-model/generate_gradcam_academic.py
+ml-model/confusion_matrix_test_latest.json
 
 # Runtime files
 *.log
