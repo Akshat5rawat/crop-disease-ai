@@ -1,0 +1,36 @@
+{
+  "split": "test",
+  "labels": [
+    "Early_blight",
+    "Healthy",
+    "Late_blight",
+    "Leaf_Mold"
+  ],
+  "accuracy": 0.9088541666666666,
+  "confusion_matrix": [
+    [
+      122,
+      3,
+      25,
+      12
+    ],
+    [
+      0,
+      216,
+      1,
+      8
+    ],
+    [
+      2,
+      4,
+      208,
+      11
+    ],
+    [
+      1,
+      1,
+      2,
+      152
+    ]
+  ]
+}
