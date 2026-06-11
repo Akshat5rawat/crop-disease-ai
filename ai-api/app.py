@@ -14,8 +14,9 @@ ML_DIR = (BASE_DIR / ".." / "ml-model").resolve()
 UPLOAD_DIR = BASE_DIR / "uploads"
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-MODEL_PATH = Path(os.getenv("MODEL_PATH", str(ML_DIR / "model.h5")))
-LABELS_PATH = Path(os.getenv("LABELS_PATH", str(ML_DIR / "labels.json")))
+DEFAULT_MODEL_PATH = (ML_DIR / "best_model.h5") if (ML_DIR / "best_model.h5").exists() else (ML_DIR / "model.h5")
+MODEL_PATH = Path(os.getenv("MODEL_PATH", str(DEFAULT_MODEL_PATH))).resolve()
+LABELS_PATH = Path(os.getenv("LABELS_PATH", str(ML_DIR / "labels.json"))).resolve()
 
 app = Flask(__name__)
 CORS(app)

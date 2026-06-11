@@ -29,13 +29,22 @@ ml-model/metrics.json
 ml-model/training_history.json
 ml-model/training_curves.png
 ml-model/comparison/
+ml-model/confusion_matrix.py
+ml-model/confusion_matrix_test_20260503_135057.json
+ml-model/gradcam_early_blight.jpg
 
 # Upload directories
 backend/uploads/*
 !backend/uploads/.gitkeep
 ai-api/uploads/*
+ai-api/Dockerfile
 !ai-api/uploads/.gitkeep
+
 
 # OS
 .DS_Store
 Thumbs.db
+
+#documents
+doc
+tools

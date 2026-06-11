@@ -108,7 +108,7 @@ function App() {
       <div className="bg-orb orb-b" />
 
       <header className="hero reveal">
-        <p className="eyebrow">AI-Based Crop Disease Prediction</p>
+        <p className="eyebrow">Disease Prediction</p>
         <h1>LeafScan Intelligence Console</h1>
         <p className="subtitle">
           Upload a crop leaf image or use live camera capture for disease classification, treatment guidance,
