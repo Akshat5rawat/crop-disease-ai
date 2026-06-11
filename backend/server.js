@@ -22,6 +22,10 @@ app.get("/api/health", (req, res) => {
 app.use("/api", predictRoutes);
 app.use("/api", historyRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Crop Disease AI Backend is running");
+});
+
 app.use((err, req, res, next) => {
   const status = err.status || 500;
   res.status(status).json({
